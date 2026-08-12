@@ -174,6 +174,7 @@ function ENT:FireBullet( pos, ang, attacker, shellDir )
             HullSize = 2,
             Spread = Vector(),
             IgnoreEntity = self:GetParent(),
+            Inflictor = self:GetParent(),
             TracerName = "MuzzleFlash",
             AmmoType = "SMG1"
         } )
