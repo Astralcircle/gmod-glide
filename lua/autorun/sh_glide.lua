@@ -273,9 +273,9 @@ do
         return isDeveloperActive
     end
 
-    cvars.AddChangeCallback( "developer", function( convar, old, new )
-        isDeveloperActive = cvars.Bool( "developer" )
-    end)
+    cvars.AddChangeCallback( "developer", function( _, _, new )
+        isDeveloperActive = tobool( new )
+    end )
 end
 
 function Glide.PrintDev( str, ... )
